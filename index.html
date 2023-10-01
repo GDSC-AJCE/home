@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>GDSC AJCE - Home</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <!-- Favicon -->
+  <link href="assets/img/icons/logo.svg" rel="icon" />
+  <link href="assets/img/icons/logo.svg" rel="apple-touch-icon" />
+
+  <!-- Tally pop up -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./main.css" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- custom css file -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .btn-get-started {
+      background-color: #4285f4;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="bgimg">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <img src="Page Blue EL.jpg" alt=""> -->
+        <a href="index.html" class="logo"><img src="assets/img/icons/logo.svg" alt="" class="img-fluid" />
+          <h6 style="float: right; padding-top: 10px; padding-left: 10px">
+            <font style="color: #4285f4">G</font><font style="color: #ea4335">D</font><font style="color: #f9ab00">S</font><font style="color: #34a853">C</font> AJCE
+          </h6>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="#hero-m">Home</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="leaderboardDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                GCSJ Leaderboard
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="leaderboardDropdown">
+                <li>
+                  <a class="dropdown-item" href="individual.html">Individual Leaderboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="group.html">Group Leaderboard</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a href="android.html" class="nav-link">Download App</a></li>
+            <li>
+              <a class="getstarted scrollto"
+                href="https://gdsc.community.dev/amal-jyothi-college-of-engineering-kanjirappally/">Join us</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <!-- .navbar -->
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div style="height: 40px"></div>
+  <div class="d-flex flex-column p-5" id="hero-m">
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/icons/Banner Yellow L.jpg" alt="Image 1" id="image1" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/icons/Banner Red L.jpg" alt="Image 2" id="image2" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/icons/Banner Blue L.jpg" alt="Image 3" id="image3" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/icons/Banner Green L.jpg" alt="Image 3" id="image4" />
+        </div>
+      </div>
+    </div>
+    <div class="text-center pt-5">
+      <a href="https://gdsc.community.dev/amal-jyothi-college-of-engineering-kanjirappally"
+        class="btn btn-primary btn-get-started">
+        Join Us!
+      </a>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var image1 = document.getElementById("image1");
+      var image2 = document.getElementById("image2");
+      var image3 = document.getElementById("image3");
+      var image4 = document.getElementById("image4");
+
+      var mediaQuery = window.matchMedia("(max-width: 576px)");
+
+      function handleScreenChange(e) {
+        if (e.matches) {
+          image1.src = "assets/img/icons/Banner Yellow S.jpg";
+          image2.src = "assets/img/icons/Banner Red S.jpg";
+          image3.src = "assets/img/icons/Banner Blue S.jpg";
+          image4.src = "assets/img/icons/Banner Green S.jpg";
+          var heroM = document.getElementById("hero-m");
+          if (heroM.classList.contains("p-5")) {
+            heroM.classList.remove("p-5");
+          }
+        } else {
+          image1.src = "assets/img/icons/Banner Yellow L.jpg";
+          image2.src = "assets/img/icons/Banner Red L.jpg";
+          image3.src = "assets/img/icons/Banner Blue L.jpg";
+          image4.src = "assets/img/icons/Banner Green L.jpg";
+          document.getElementById("hero-m").classList.add("p-5");
+        }
+      }
+
+      handleScreenChange(mediaQuery);
+      mediaQuery.addListener(handleScreenChange);
+    });
+  </script>
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Build solutions using Google technology for regional companies
+              and communities while networking and learning with other
+              aspiring developers.
+            </p>
+            <ul>
+              <li>
+                <i class="ri-check-double-line"></i>CONNECT: Meet pupils at
+                your institution or university who are enthusiastic about
+                developer tools. Everyone is invited, regardless of their
+                academic specialisation.
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i>LEARN: Through practical
+                seminars, events, lectures, and project-building activities,
+                you can learn about a variety of technical subjects and
+                acquire new skills.
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i>GROW: Build excellent
+                solutions to neighbourhood issues using new knowledge. Expand
+                your network and job opportunities. Help others learn as a way
+                to give back to your neighbourhood.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              We are a collection of tech enthusiasts interested in learning
+              about technology, sharing expertise, and collaborating to create
+              something to enhance the future. We hold talks, workshops, and
+              other events on a variety of tech-related topics to help you
+              learn more about technology. With weekly activities that are
+              filled with knowledge that is typically not taught within the
+              four walls of a classroom, we teach computer enthusiasts the
+              fundamental learning skills they need to succeed
+            </p>
+            <a href="https://gdsc.community.dev/amal-jyothi-college-of-engineering-kanjirappally/"
+              class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <hr />
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Events</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="row c-cards">
+            <div class="card col">
+              <img
+                src="./gallery-photos/side (1) (Medium).jpg"
+                class="card-img-top"
+                alt="./gallery-photos/side (1) (Medium).jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Python Workshop</h5>
+                <p class="card-text">
+                  <img src="assets/img/icons/person.svg" alt="" />40 seats
+                </p>
+                <p class="card-text">
+                  <img src="assets/img/icons/date.svg" alt="" />24th March
+                </p>
+                <p class="card-text">
+                  <img src="assets/img/icons/time.svg" alt="" />4pm - 5pm
+                </p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Register</a>
+              </div>
+            </div>
+            <div class="card col">
+              <img
+                src="./gallery-photos/side (1) (Medium).jpg"
+                class="card-img-top"
+                alt="./gallery-photos/side (1) (Medium).jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Python Workshop</h5>
+                <p class="card-text">
+                  <img src="assets/img/icons/person.svg" alt="" />40 seats
+                </p>
+                <p class="card-text">
+                  <img src="assets/img/icons/date.svg" alt="" />24th March
+                </p>
+                <p class="card-text">
+                  <img src="assets/img/icons/time.svg" alt="" />4pm - 5pm
+                </p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Register</a>
+              </div>
+            </div>
+            <div class="card col">
+              <img
+                src="./gallery-photos/side (1) (Medium).jpg"
+                class="card-img-top"
+                alt="./gallery-photos/side (1) (Medium).jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Python Workshop</h5>
+                <p class="card-text">
+                  <img src="assets/img/icons/person.svg" alt="" />40 seats
+                </p>
+                <p class="card-text">
+                  <img src="assets/img/icons/date.svg" alt="" />24th March
+                </p>
+                <p class="card-text">
+                  <img src="assets/img/icons/time.svg" alt="" />4pm - 5pm
+                </p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  -->
+    <!-- End Sevices Section -->
+
+    <!-- <hr> -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Gallery</h2>
+          </div>
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/top (1) (Medium).JPG"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/top (2) (Medium).JPG"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/top (3) (Medium).JPG"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/portrait (1)(1) (Medium).jpg"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="" class="img-fluid" alt="" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/portrait (2)(1) (Medium).jpg"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/side (1) (Medium).JPG"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/side (2) (Medium).JPG"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="gallery-photos/side (3) (Medium).JPG"
+                  class="img-fluid"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- End Portfolio Section -->
+
+    <div class="container gallery-container" id="gallery">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>Get a glimpse of our previous events</p>
+      </div>
+      <div class="tz-gallery">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="lightbox" href="gallery-photos/top (2) (Medium).JPG">
+              <img src="gallery-photos/top (2) (Medium).JPG" alt="image" />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="lightbox" href="gallery-photos/top (3) (Medium).JPG">
+              <img src="gallery-photos/top (3) (Medium).JPG" alt="image" />
+            </a>
+          </div>
+          <!-- <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="gallery-photos/portrait (1)(1) (Medium).jpg">
+                        <img src="gallery-photos/portrait (1)(1) (Medium).jpg" alt="Tunnel">
+                    </a>
+                </div> -->
+
+          <div class="col-sm-12 col-md-4">
+            <a class="lightbox" href="gallery-photos/side (3) (Medium).JPG">
+              <img src="gallery-photos/side (3) (Medium).JPG" alt="image" />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="lightbox" href="gallery-photos/portrait (2)(1) (Medium).jpg">
+              <img src="gallery-photos/portrait (2)(1) (Medium).jpg" alt="image" />
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <a class="lightbox" href="gallery-photos/side (1) (Medium).jpg">
+              <img src="gallery-photos/side (1) (Medium).jpg" alt="image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Questions you might have and their answers</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is GDSC? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Google Developer Student Clubs are university based
+                  community groups for students interested in Google developer
+                  technologies.Students from all undergradu ate or
+                  postgraduate programs with an interest in growing as a
+                  developer can join GDSC.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What are the benefits of
+                joining GDSC?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Professional growth:It includes having access to technical
+                  expertise and community management training. Network growth:
+                  Access to a global network of student leaders,professional
+                  community organizers,industry experts .
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Is GDSC only for students in
+                computer science?
+
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  No! Students from all programs who are interested in growing
+                  as a developer can join GDSC.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How do I join GDSC AJCE and is
+                it free?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  You can join GDSC AJCE by filling out this form and it is
+                  free of cost.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>dsc@amaljyothi.ac.in</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9778 130 551</p>
+              </div>
+
+              <div class="whatsapp">
+                <i class="bi bi-whatsapp"></i>
+                <h4>WhatsApp Community:</h4>
+                <p>
+                  <a href="https://chat.whatsapp.com/I283WPrqz0yGAfmqL1Bb8o">Join here</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-2 gx-md-3">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group col-12">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                </div>
+                <div class="form-group col-12">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3 col-12">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center col-12">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>GDSC AJCE</h3>
+            <p><strong>Email:</strong>dsc@amaljyothi.ac.in<br /></p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">Events</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/gdsc-amal-jyothi-a74979256/" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="gen_team.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run(".tz-gallery");
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/leaderboard.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="bgimg">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo"><img src="assets/img/icons/logo.svg" alt="" class="img-fluid">
+                    <h6 style="float: right; padding-top: 10px; padding-left: 10px;">
+                        <font style="color: #4285f4;">G</font><font style="color: #ea4335;">D</font><font
+                            style="color: #f9ab00;">S</font><font style="color: #34a853;">C</font> AJCE
+                    </h6>
+                </a>
+
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto" href="index.html#hero-m">Home</a></li>
+                        <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="leaderboardDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                GCSJ Leaderboard
+                            </a>
+                            <ul class="dropdown-menu active" aria-labelledby="leaderboardDropdown">
+                                <li><a class="dropdown-item" href="individual.html">Individual Leaderboard</a></li>
+                                <li><a class="dropdown-item active" href="#">Group Leaderboard</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+                        <li>
+                            <a class="getstarted scrollto"
+                                href="https://gdsc.community.dev/amal-jyothi-college-of-engineering-kanjirappally/">Join
+                                us</a>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container-wrap pt-5">
+        <section id="leaderboard">
+          <nav class="ladder-nav">
+            <div class="ladder-title">
+                <h3>
+                    <font style="color: #4285f4;">G</font><font style="color: #ea4335;">C</font><font
+                        style="color: #f9ab00;">S</font><font style="color: #34a853;">J</font><span
+                        style="color: #4285f4;"> Leaderboard</span>
+                </h3>
+            </div>
+            <div class="ladder-search">
+                <input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Group, Player... " />
+                <span id="clear-search" class="clear-icon">&times;</span>
+            </div>
+        </nav>
+            <div class="table-container text-center mt-5">
+              <table id="rankings" class="table table-bordered table-striped table-hover mx-auto" style="max-width: 50%;">            
+                  <thead class="thead-dark text-center">
+                      <tr class="rankings-header">
+                          <th>Sl. No.</th>
+                          <th>Group</th>
+                          <th>Score</th>
+                      </tr>
+                  </thead>
+                  <tbody class="t-body">
+                      <!-- Table data goes here -->
+                  </tbody>
+              </table>
+            </div>
+        </section>
+        <div class="bar text-center" id="bar">
+            <div class="loader">
+                <img src="assets/img/loading.gif" alt="Loading..." class="loading-gif" width="50" height="50">
+            </div>
+            <p><h6 style="color: #ea4335">Fetching Scores...</h6></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/group.js"></script>
+
+</body>
+
+</html>
