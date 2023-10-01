@@ -43,6 +43,3 @@ Non-developers can also contribute in various ways, such as:
 ### Happy hacking!
 
 ## Our Top Contributors 
-<p align="center"><a href="https://github.com/debrajrout/Dev.HFest/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=debrajrout/Dev.HFest" />
-</a></p>
