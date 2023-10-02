@@ -49,5 +49,3 @@ git push
 ```
 
 * Create your Pull Request!
-
-> Taking secret from env now
