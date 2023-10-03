@@ -2134,3 +2134,35 @@ section {
     margin: 30px 10px;
   }
 }
+
+.news-img{
+  -webkit-box-shadow: 6px 11px 38px 5px rgba(0,0,0,0.53);
+  -moz-box-shadow: 6px 11px 38px 5px rgba(0,0,0,0.53);
+  box-shadow: 6px 11px 38px 5px rgba(0,0,0,0.53);
+}
+
+.gdsc-title{
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.gdsc-subtitle{
+  font-size: 46px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2487ce;
+}
+
+@media(max-width: 768px) {
+  .gdsc-title{
+    font-size: 34px;
+    font-weight: 300;
+  }
+  
+  .gdsc-subtitle{
+    font-size: 22px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2487ce;
+  }
+}
