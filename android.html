@@ -63,20 +63,28 @@
   <!-- End Header -->
 
   <!-- Center the download button image horizontally and vertically -->
-  <div class="d-flex justify-content-center align-items-center flex-column  " style="margin-top: 10%;">
+  <div class="d-flex justify-content-center align-items-center flex-column" style="margin-top: 90px;">
 
-    <img src="assets/img/android.png" alt="Download the Android App" class="android" />
+    <img src="assets/img/android - Upper.png" alt="Download the Android App" class="androidUpper" />
 
 
     <a href="https://github.com/noeljabraham/gdsj_points/releases/download/V1.0.2/GCSJ-v2.apk" target="_blank"
       rel="noopener noreferrer"><button type="button" class="btn btn-outline-primary btn-lg"
         style="margin: 20% 0%;">Download Here</button></a>
-
+    <img src="assets/img/android - Lower.png" alt="Download the Android App" class="androidLower" />
     </a>
   </div>
 
+  <script>
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
 
+    if (mediaQuery.matches) {
+      const element = document.getElementsByClassName("btn");
+      element[0].className = "btn btn-success btn-lg";
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>

@@ -99,8 +99,14 @@
   background-color: transparent !important;
 }
 
-.android {
-  height: 25rem;
+.androidUpper {
+  height: 20rem;
+  margin-top: 50px;
+}
+
+.androidLower {
+  width: 566px;
+  height: 5rem;
 }
 
 @media(max-width: 768px) {
@@ -108,9 +114,13 @@
     padding: 0;
   }
 
-  .android {
-    height: 18.75rem;
-    margin-top: 8rem;
+  .androidUpper {
+    height: 15rem;
+    margin-top: 80px;
   }
 
+  .androidLower {
+    width: 425px;
+    height: 4rem;
+  }
 }
