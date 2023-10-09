@@ -7,6 +7,7 @@
 .c-cards {
   gap: 35px;
 }
+
 .c-cards .card-img-top {
   height: 200px;
   object-fit: contain;
@@ -51,7 +52,7 @@
 }
 
 /* Override bootstrap column paddings */
-.tz-gallery .row > div {
+.tz-gallery .row>div {
   padding: 2px;
 }
 
@@ -98,12 +99,28 @@
   background-color: transparent !important;
 }
 
-@media(max-width: 768px) {
-  body {
-      padding: 0;
-  }
-  .download-button {
-    margin-top: 50% !important;
-  }
+.androidUpper {
+  height: 20rem;
+  margin-top: 50px;
 }
 
+.androidLower {
+  width: 566px;
+  height: 5rem;
+}
+
+@media(max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .androidUpper {
+    height: 15rem;
+    margin-top: 80px;
+  }
+
+  .androidLower {
+    width: 425px;
+    height: 4rem;
+  }
+}
