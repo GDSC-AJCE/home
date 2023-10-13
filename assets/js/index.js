@@ -36,7 +36,7 @@ function populateRankings(json) {
         const tr = document.createElement("tr");
         console.log(player);
 
-        const properties = ['index', 'name', 'email', 'group', 'score', 'isFinished'];
+        const properties = ['index', 'name', 'group', 'score', 'isFinished'];
 
         properties.forEach((property, propertyIndex) => {
             const td = document.createElement("td");
