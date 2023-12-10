@@ -1,3 +1,4 @@
+/* for video frm Youtube */
 .video-popup {
             position: fixed;
             bottom: 20px;
@@ -9,19 +10,49 @@
             overflow: hidden;
             background-color: #fff;
             z-index: 9999;
-        }
+}
 
-        .video-popup iframe {
+.video-popup iframe {
             width: 100%;
             height: 100%;
             border: 0;
-        }
+}
 
-        .close-btn {
+.close-btn {
             position: absolute;
             top: 5px;
             right: 5px;
             cursor: pointer;
             font-size: 16px;
             color: #555;
-        }
+}
+
+
+/* for video frm directory */
+/* .video-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 300px;
+    max-height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 9999;
+}
+        
+.video-popup iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+} */
